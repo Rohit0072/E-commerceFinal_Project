@@ -66,7 +66,7 @@ This project is divided into 3 main repositories:
 
 **Rohit Singh**  
 🎓 Sri Balaji P.G Mahavidyalaya, Jaipur  
-📩 rohitsinghworkmail@gmail.com  
+📩 rs11252003@gmail.com  
 
 ---
 
