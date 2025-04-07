@@ -1,0 +1,176 @@
+/* Base container */
+.user-profile__container {
+    --user-profile-primary-bg: #979797;
+    --user-profile-card-bg: #ffffff8f;
+    --user-profile-text-color: #1a1a1a;
+    --user-profile-placeholder-color: #888888;
+    --user-profile-border-radius: 24px;
+    --user-profile-logout-color: #ff6b6b;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 80vh;
+    background-color: var(--user-profile-primary-bg);
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+      background-image: url("https://img.freepik.com/free-vector/distressed-maze-texture_1409-9483.jpg?t=st=1743241059~exp=1743244659~hmac=b1d256c8f76df98ee97b7712190409da383edc93b75feb37739b81b26e532d5d&w=996");
+      position: relative;
+      top: 1rem;
+  }
+  
+  /* Card styling */
+  .user-profile__card {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--user-profile-card-bg);
+    border-radius: var(--user-profile-border-radius);
+    padding: 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+    margin: 1rem;
+    backdrop-filter: blur(6.7px);
+  }
+  
+  /* Header section */
+  .user-profile__header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .user-profile__add-button {
+    background: transparent;
+    border: none;
+    cursor: default;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-profile__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--user-profile-text-color);
+  }
+  
+  /* Content section */
+  .user-profile__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .user-profile__field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .user-profile__label {
+    font-size: 18px;
+    color: var(--user-profile-text-color);
+    font-weight: 400;
+  }
+  
+  .user-profile__username {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color: #232323;
+    text-transform: uppercase;
+  }
+  
+  .user-profile__email-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 100px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-profile__email-placeholder {
+    color: black;
+    font-size: 16px;
+  }
+  
+  /* Footer section */
+  .user-profile__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .user-profile__forgot-password {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--user-profile-card-bg);
+    border: none;
+    border-radius: 100px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--user-profile-text-color);
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .user-profile__circle-icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5;
+  }
+  
+  .user-profile__decorative-stars {
+    display: flex;
+    gap: 8px;
+    margin: 8px 0;
+  }
+  
+  .user-profile__star {
+    font-size: 20px;
+    color: var(--user-profile-card-bg);
+  }
+  
+  .user-profile__logout-button {
+    background-color: #ff4545;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .user-profile__logout-button:hover {
+    background-color: #f71212;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .user-profile__card {
+      padding: 20px;
+    }
+  
+    .user-profile__username {
+      font-size: 36px;
+    }
+  
+    .user-profile__footer {
+      padding: 0 10px;
+    }
+  }
+  
+  

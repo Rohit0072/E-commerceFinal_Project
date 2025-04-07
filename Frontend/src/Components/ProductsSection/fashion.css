@@ -1,0 +1,234 @@
+/* ====== Products Grid - 4 per Row (Desktop) / 2 per Row (Mobile with 2fr) ====== */
+.products-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* 4 columns */
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Tablets - 2 columns */
+@media (max-width: 1024px) {
+  .products-section-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+/* Mobile - 2 columns (each takes 2fr) */
+@media (max-width: 600px) {
+  .products-section-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+/* ====== Product Card ====== */
+.products-section-product {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-align: center;
+}
+
+.products-section-product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Product Image ====== */
+.products-section-product-img-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.products-section-product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+/* ====== Rating Stars Styling ====== */
+.products-section-stars {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.products-section-stars i {
+  font-size: 1rem;
+  color: #ffcc00; /* Yellow for filled stars */
+}
+
+.products-section-star-empty {
+  color: #ccc; /* Gray for empty stars */
+}
+
+/* ====== Fix Pagination Buttons ====== */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.pagination-btn {
+  padding: 8px 12px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background: #ddd;
+}
+
+.pagination-btn.active {
+  background: #e73c17;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination-btn:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Mobile - Make product list use 2fr */
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+.category-container {
+  position: relative;
+  top: 1rem;
+}
+
+/* ====== Truncate Long Descriptions ====== */
+.product-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+/* ====== Make Price Bigger & Bolder ====== */
+.products-section-product-price {
+  color: #e74c3c;
+  font-weight: 700;
+  font-size: 1.25rem; /* Increase font size */
+}
+
+.category-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.product-price{
+  font-weight: 900;
+  font-size: 24px;
+}
+.product-title, .product-description{
+  padding: 0px 10px;
+}
+.loading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+.products-section-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.buy-btn, .add-to-cart-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.buy-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #c0392b;
+}
+
+.add-to-cart-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2980b9;
+}
+/* ====== Product Card Buttons ====== */
+.product-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.buy-btn, .wishlist-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn {
+  background-color: #e73c17;
+  color: white;
+}
+
+.buy-btn:hover {
+  background-color: #c13213;
+}
+
+.wishlist-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.wishlist-btn:hover {
+  background-color: #e6b800;
+}
+
+

@@ -1,0 +1,10 @@
+.toogle-btn-sidebar {
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .toogle-btn-sidebar {
+    width: auto;
+    margin: 80px 5px;
+  }
+}

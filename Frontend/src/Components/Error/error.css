@@ -1,0 +1,17 @@
+.errorimg {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    background-color: #e4e4e4;  
+    height: 80vh;
+    width: 100%; 
+  }
+  
+  .errorimg img {
+    max-width: 100%;  
+    max-height: 100%; 
+    height: auto;  
+    width: auto;  
+    object-fit: contain; 
+  }
+  

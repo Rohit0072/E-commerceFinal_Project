@@ -1,0 +1,308 @@
+.ecom__login__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+    font-family: "Inter", sans-serif;
+    backdrop-filter: blur(6.7px);
+  }
+  
+  .ecom__login__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .ecom__login__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+  }
+  
+  .ecom__login__subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+    color: #1a1a1a;
+  }
+  
+  .ecom__login__cards__container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .ecom__login__cards__container {
+      flex-direction: column;
+    }
+    div.ecom__login__card__title{
+      display: none;
+    }
+    .sign_in_page{
+      display: none;
+    }
+    .ecom__login__card--light{
+      display: none;
+      
+    }
+  }
+  
+  .ecom__login__card {
+    position: relative;
+    flex: 1;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ecom__login__card--dark {
+    background-image: url("https://img.freepik.com/free-vector/fluid-black-white-patterns_1409-8819.jpg?t=st=1743242535~exp=1743246135~hmac=d91757c335ebddc62724ab01605d9b804ebd57613a142350c0ebd317e54eb5b3&w=996");
+    color: white;
+  }
+  
+  .ecom__login__card--light {
+    top : 2rem;
+    background-color: #f5f2f2;
+    color: #1a1a1a;
+    background-image: url(https://img.freepik.com/free-vector/geometric-shapes-pattern-background_1319-136.jpg?t=st=1743244359~exp=1743247959~hmac=0fad69a…&w=740);
+  }
+  
+  .ecom__login__card__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+    text-align: center;
+  }
+  
+  .ecom__login__icon__circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    z-index: 2;
+  }
+  
+  .ecom__login__icon__circle--gold {
+    background: linear-gradient(135deg, #f0d264 0%, #d4af37 100%);
+    color: #1a1a1a;
+  }
+  
+  .ecom__login__icon__circle--dark {
+    background-color: #4a4a4a;
+    color: white;
+  }
+  
+  .ecom__login__icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ecom__login__form__container {
+    background-color: #ffffff91;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    color: #1a1a1a;
+    backdrop-filter: blur(6.7px);
+  }
+  
+  .ecom__login__form__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+  }
+  
+  .ecom__login__input__group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .ecom__login__label {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+  }
+  
+  .ecom__login__input__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .ecom__login__input__icon {
+    color: #666;
+    margin-left: 0.8rem;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .ecom__login__input {
+    flex: 1;
+    border: none;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    background: transparent;
+    outline: none;
+  }
+  
+  .ecom__login__password__toggle {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ecom__login__forgot__password {
+    text-align: right;
+    margin-bottom: 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  .ecom__login__forgot__password--right {
+    text-align: right;
+  }
+  
+  .ecom__login__forgot__link {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .ecom__login__forgot__link:hover {
+    text-decoration: underline;
+  }
+  
+  .ecom__login__submit__button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .ecom__login__submit__button:hover {
+    background-color: #333;
+  }
+  
+  .ecom__login__security__note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .ecom__login__alternative {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ecom__login__alternative__button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(90deg, #4a4a4a 0%, #d4af37 100%);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: opacity 0.2s;
+  }
+  
+  .ecom__login__alternative__button:hover {
+    opacity: 0.9;
+  }
+  
+  .ecom__login__alternative__text {
+    font-size: 0.8rem;
+    color: #999;
+    margin: 0;
+  }
+  
+  .ecom__login__social__button {
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: background-color 0.2s;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+  }
+  
+  .ecom__login__social__button--google {
+    color: #1a1a1a;
+  }
+  
+  .ecom__login__social__button--facebook {
+    color: #1877f2;
+  }
+  
+  .ecom__login__social__icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .ecom__login__footer {
+    margin-top: 2rem;
+  }
+  
+  .ecom__login__footer__text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  
+  @media (max-width: 350px) {
+    .ecom__login__container {
+      padding: 1rem;
+    }
+    
+  }
+  .ecom__login__error{
+    color: red;
+  }
+  .Toastify__toast-container {
+    z-index: 99999 !important;
+  }
+  .signin_link{
+    background-color: white;
+    color : black;
+    border: 5px solid white;
+  }

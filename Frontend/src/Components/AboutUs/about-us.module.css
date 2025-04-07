@@ -1,0 +1,253 @@
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.aboutUsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.splitBackground {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #1a1a1a 0%, #1a1a1a 50%, #f5f5f5 50%, #f5f5f5 100%);
+  z-index: -1;
+}
+
+.mainHeading {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #fff 0%, #fff 50%, #000 50%, #000 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 3;
+}
+
+.subHeading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.5rem 0 2rem;
+  color: #e67e22;
+  position: relative;
+  z-index: 3;
+}
+
+.storeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background-color: #e67e22;
+  color: white;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.teamSection {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.teamMember {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: white;
+  position: relative;
+}
+
+.lightMember {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.circleFrame {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.memberImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.starOrange {
+  color: #e67e22;
+  bottom: 20%;
+  left: 15%;
+}
+
+.starGray {
+  color: #666;
+  top: 30%;
+  left: 20%;
+  font-size: 2rem;
+}
+
+.notificationDot {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #e67e22;
+  border-radius: 50%;
+  top: 20%;
+  right: 25%;
+  border: 2px solid white;
+}
+
+.memberInfo {
+  width: 100%;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.memberName {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.memberRole {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.25rem 0 1rem;
+  color: #666;
+}
+
+.lightMember .memberRole {
+  color: #999;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 1rem 0;
+}
+
+.lightMember .divider {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.memberBio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.darkButton,
+.orangeButton {
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.darkButton {
+  background-color: white;
+  color: black;
+}
+
+.darkButton:hover {
+  background-color: #333;
+}
+
+.orangeButton {
+  background-color: #e67e22;
+  color: white;
+}
+
+.orangeButton:hover {
+  background-color: #d35400;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .teamSection {
+    flex-direction: column;
+  }
+
+  .mainHeading {
+    font-size: 3rem;
+  }
+
+  .circleFrame {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.rohit-name {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #f59e0b, #fff, #000);
+  color: transparent;
+}

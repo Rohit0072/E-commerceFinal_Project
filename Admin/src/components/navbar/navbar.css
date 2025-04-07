@@ -1,0 +1,13 @@
+.navbar-btn {
+    color: #fff !important;
+    padding:8px 15px;
+    border: 1px solid #fff ;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.navbar-btn:hover {
+    background-color: #837a7a;
+    color: #000;
+    border: 1px solid #000;
+}
